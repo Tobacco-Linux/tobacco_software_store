@@ -7,7 +7,7 @@ mod frontend;
 
 fn main() {
     let app = Application::builder()
-        .application_id("org.tobaccolinux.servicemanager")
+        .application_id("org.tobaccolinux.software_store")
         .build();
 
     app.connect_activate(|app| {
