@@ -3,6 +3,7 @@ use adw::{
     Application,
     prelude::{ApplicationExt, ApplicationExtManual},
 };
+mod backend;
 mod frontend;
 
 fn main() {

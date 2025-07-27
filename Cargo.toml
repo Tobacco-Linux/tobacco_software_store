@@ -6,3 +6,5 @@ edition = "2024"
 [dependencies]
 gtk = "0.18.2"
 adw = { version = "0.8.0", package = "libadwaita", features = ["v1_5"] }
+alpm = "4.0.3"
+nix = "0.30.1"
