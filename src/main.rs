@@ -1,4 +1,4 @@
-use crate::frontend::build_ui;
+use crate::{backend::parse_config, frontend::build_ui};
 use adw::{
     Application,
     prelude::{ApplicationExt, ApplicationExtManual},
@@ -14,6 +14,8 @@ fn main() {
     app.connect_activate(|app| {
         build_ui(app);
     });
+
+    dbg!(parse_config("/etc/pacman.conf").unwrap());
 
     app.run();
 }
